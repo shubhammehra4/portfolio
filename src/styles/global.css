@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+.social-links {
+  @apply text-3xl md:text-4xl mx-2 md:mx-4 focus:outline-none;
+}
+
+.social-links:hover svg {
+  @apply transition duration-300 ease-in-out transform scale-150;
+}
+
+.social-links:focus svg {
+  @apply transition duration-300 ease-in-out transform scale-150;
+}
+
+.btn-primary {
+  @apply font-bold border-2 border-white rounded-md px-4 py-2 bg-white hover:bg-transparent text-gray-900 hover:text-white focus:bg-transparent focus:text-white transition-all duration-200 ease-in cursor-pointer focus:outline-none;
+}
+.form-input {
+  @apply text-black rounded-r pl-2 py-2 w-full focus:outline-none focus:ring-2 focus:ring-offset-blue-400 focus:border-transparent;
+}
+
+.form-label {
+  @apply text-sm md:text-base font-bold rounded-l px-3 md:px-4 py-2 bg-indigo-600 whitespace-nowrap;
+}
+.form-input:focus + .form-label {
+  @apply bg-indigo-500;
+}
+
+.tooltip {
+  @apply invisible opacity-0 absolute;
+}
+
+.has-tooltip:hover .tooltip {
+  @apply visible z-50 transition duration-1000 ease-in-out opacity-100;
+}
+
+@tailwind utilities;
+
+.name::before {
+  position: absolute;
+  content: "";
+  width: 70%;
+  bottom: -8px;
+  height: 0.5rem;
+  border-radius: 1rem;
+  background: linear-gradient(270deg, #00fff6, #ff0200);
+  background-size: 400% 400%;
+  -webkit-animation: gradientLine 15s ease infinite;
+  animation: gradientLine 15s ease infinite;
+}
+@media (min-width: 768px) {
+  .name::before {
+    width: 55%;
+  }
+}
+
+@-webkit-keyframes gradientLine {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradientLine {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.underline {
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background: white;
+  position: absolute;
+  top: -4px;
+}
+
+.glider-dot.active {
+  background-color: white !important;
+}
+.glider-dot {
+  background-color: rgb(255, 217, 125) !important;
+}
+
+.glider-next,
+.glider-prev {
+  font-size: 60px !important;
+}
+
+.glider-next,
+.glider-prev:focus {
+  outline: none !important;
+}
+.glider-next {
+  padding-right: 10px !important;
+}
+.glider-prev {
+  padding-left: 10px !important;
+}
