@@ -39,7 +39,7 @@ const NavBar: React.FC<NavBarProps> = ({ active, setActive }) => {
             <m.button
               key={i}
               animate
-              className="mx-3 focus:outline-none relative text-xl font-bold focus:underline"
+              className="mx-3 focus:outline-none relative text-xl font-bold"
               onClick={() => handleClick(i)}
               style={{ color: active === i ? li.color : "white" }}
             >
