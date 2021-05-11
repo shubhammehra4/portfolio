@@ -1,5 +1,10 @@
 @tailwind base;
 @tailwind components;
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .social-links {
   @apply text-3xl md:text-4xl mx-2 md:mx-4 focus:outline-none;
 }
