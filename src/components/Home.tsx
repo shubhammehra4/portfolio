@@ -14,13 +14,13 @@ const Home: React.FC<HomeProps> = ({ setActive }) => {
         animate={{ opacity: 1 }}
         className="flex flex-col w-full"
       >
-        <div className="max-w-7xl px-5 xl:px-0 w-full mx-auto flex flex-col md:flex-row justify-between items-center">
+        <div className="max-w-7xl px-5 xl:px-0 w-full mx-auto flex flex-col-reverse md:flex-row justify-between items-center">
           <div>
             <m.h1
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               layoutId="heading"
-              className="text-4xl md:text-6xl my-2 md:my-4"
+              className="text-3xl md:text-6xl my-2 md:my-4 mt-4 md:mt-0"
             >
               <span className="mb-1 md:mb-4">Hi, I'm</span>
               <br />
@@ -51,7 +51,7 @@ const Home: React.FC<HomeProps> = ({ setActive }) => {
               quality={100}
               formats={["auto", "webp", "avif"]}
               placeholder="blurred"
-              className="rounded-full w-2/5 lg:w-full"
+              className="rounded-full w-3/5 lg:w-full"
             />
           </m.div>
         </div>
