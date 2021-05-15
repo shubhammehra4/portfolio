@@ -9,6 +9,7 @@ module.exports = {
       `shubhammehra4`,
       `Shubham portfolio`,
     ],
+    siteUrl: `https://shubhammehra.gatsbyjs.io/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -37,6 +38,7 @@ module.exports = {
     },
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-postcss`,
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-webpack-bundle-analyser-v2`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

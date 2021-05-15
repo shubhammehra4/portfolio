@@ -77,6 +77,10 @@ const Seo: React.FC<SeoProps> = ({
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          name: "google-site-verification",
+          content: "8sRdIiBmYpXWUIun0i2SHPYw0j5zD9zaYircBR8pRxA",
+        },
       ].concat(meta)}
     />
   )
