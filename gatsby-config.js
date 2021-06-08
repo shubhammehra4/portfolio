@@ -11,6 +11,9 @@ module.exports = {
     ],
     siteUrl: `https://shubhammehra.gatsbyjs.io/`,
   },
+  flags: {
+    FUNCTIONS: true,
+  },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,

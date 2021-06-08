@@ -49,9 +49,22 @@ const Contact: React.FC<ContactProps> = ({}) => {
     if (err) return
 
     setSending(true)
-    console.log(name, email, feedback)
-
-    setTimeout(() => setSending(false), 1000)
+    fetch("https://tclsxo.deta.dev/mail", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ name, email, message: feedback }),
+    })
+      .then(response => response.json())
+      .then(data => {
+        console.log("Success:", data)
+        setSending(false)
+      })
+      .catch(error => {
+        console.error("Error:", error)
+        setTimeout(() => setSending(false), 1000)
+      })
   }
   return (
     <>
