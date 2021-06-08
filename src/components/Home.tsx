@@ -20,6 +20,7 @@ const Home: React.FC<HomeProps> = ({ setActive }) => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               layoutId="heading"
+              style={{ fontFamily: "'Montserrat', sans-serif" }}
               className="text-3xl md:text-6xl my-2 md:my-4 mt-4 md:mt-0"
             >
               <span className="mb-1 md:mb-4">Hi, I'm</span>
@@ -59,6 +60,7 @@ const Home: React.FC<HomeProps> = ({ setActive }) => {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.5, duration: 0.5 }}
+          style={{ fontFamily: "'Poppins', sans-serif" }}
           className="max-w-7xl mx-auto mt-8 flex flex-col"
         >
           <q className="text-2xl md:text-4xl mt-6 md:mt-10 break-words text-center my-2">
